@@ -16,4 +16,4 @@ const argv = require('yargs')
     .alias('h', 'help')
     .argv;
 
-naivecoin(argv.host, argv.port, argv.peers, argv.logLevel, argv.name);
+naivecoin("0.0.0.0", "80", argv.peers, argv.logLevel, argv.name);
