@@ -2,23 +2,23 @@
     "apps": [
         {
             "name": "1",
-            "script": "./bin/naivecoin.js",
+            "script": "./bin/index.js",
             "watch": true,
             "interpreter_args": "--debug=7001",            
             "env": {
-                "HTTP_PORT": "3001",                
+                "HTTP_PORT": "80",                
                 "NAME": "1"
             }
         },
         {
             "name": "2",
-            "script": "./bin/naivecoin.js",
+            "script": "./bin/index.js",
             "watch": true,
             "interpreter_args": "--debug=7002",            
             "env": {
-                "HTTP_PORT": "3002",                
+                "HTTP_PORT": "81",                
                 "NAME": "2",
-                "PEERS": "http://localhost:3001"
+                "PEERS": "http://localhost"
             }
         }
     ]
